@@ -739,6 +739,16 @@ nav a:hover {
 }
 
 
+.memory-game {
+    background:
+        linear-gradient(
+            135deg,
+            #20204f,
+            #163d58
+        );
+}
+
+
 .game-info {
 
     padding: 20px;

@@ -50,6 +50,17 @@ const games = [
             "https://pranjalkarn9-art.github.io/mystery-detective/"
     }
 
+    },
+
+    {
+    title: "Memory Match",
+
+    description:
+        "Test your memory, find matching pairs and build powerful combos.",
+
+    link:
+        "https://pranjalkarn9-art.github.io/Match-The-Card/"
+}
 ];
 
 

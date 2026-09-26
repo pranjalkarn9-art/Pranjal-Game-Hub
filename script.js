@@ -1,104 +1,69 @@
 const games = [
-
     {
         title: "Guess the Number",
-        description:
-            "Test your guessing skills and find the secret number.",
-        link:
-            "https://pranjalkarn9-art.github.io/Guess-The-Number/"
+        description: "Test your guessing skills and find the secret number.",
+        link: "https://pranjalkarn9-art.github.io/Guess-The-Number/"
     },
-
     {
         title: "Aim the Target",
-        description:
-            "Test your accuracy and reflexes by hitting targets.",
-        link:
-            "https://pranjalkarn9-art.github.io/Aim-The-Target/"
+        description: "Test your accuracy and reflexes by hitting targets.",
+        link: "https://pranjalkarn9-art.github.io/Aim-The-Target/"
     },
-
     {
         title: "Math Quest",
-        description:
-            "Turn mathematics into a fun gaming challenge.",
-        link:
-            "https://pranjalkarn9-art.github.io/mathquest/"
+        description: "Turn mathematics into a fun gaming challenge.",
+        link: "https://pranjalkarn9-art.github.io/mathquest/"
     },
-
     {
         title: "Code Breaker",
-        description:
-            "Crack the hidden code using logic and deduction.",
-        link:
-            "https://pranjalkarn9-art.github.io/Code-Cracker/"
+        description: "Crack the hidden code using logic and deduction.",
+        link: "https://pranjalkarn9-art.github.io/Code-Cracker/"
     },
-
     {
         title: "Mystery Detective",
-        description:
-            "Investigate clues and solve mysterious cases.",
-        link:
-            "https://pranjalkarn9-art.github.io/mystery-detective/"
+        description: "Investigate clues and solve mysterious cases.",
+        link: "https://pranjalkarn9-art.github.io/mystery-detective/"
     },
-
     {
         title: "Memory Match",
-        description:
-            "Test your memory, find matching pairs and build powerful combos.",
-        link:
-            "https://pranjalkarn9-art.github.io/Match-The-Card/"
+        description: "Test your memory, find matching pairs and build powerful combos.",
+        link: "https://pranjalkarn9-art.github.io/Match-The-Card/"
     },
-
     {
         title: "Asteroid Blaster",
-        description:
-            "Blast asteroids, survive dangerous waves and battle powerful space bosses.",
-        link:
-            "https://pranjalkarn9-art.github.io/Asteroid-Blaster/"
+        description: "Blast asteroids, survive dangerous waves and battle powerful space bosses.",
+        link: "https://pranjalkarn9-art.github.io/Asteroid-Blaster/"
     }
-
 ];
 
-
-const $ = id =>
-    document.getElementById(id);
+const $ = id => document.getElementById(id);
 
 
 /* THEME */
 
 $("themeBtn").onclick = () => {
-
     document.body.classList.toggle("light");
 
     const light =
         document.body.classList.contains("light");
 
     $("themeBtn").textContent =
-        light
-            ? "☀️"
-            : "🌙";
+        light ? "☀️" : "🌙";
 
     localStorage.setItem(
         "gameZoneTheme",
-        light
-            ? "light"
-            : "dark"
+        light ? "light" : "dark"
     );
-
 };
 
 
 /* LOAD SAVED THEME */
 
 if (
-    localStorage.getItem("gameZoneTheme")
-    === "light"
+    localStorage.getItem("gameZoneTheme") === "light"
 ) {
-
     document.body.classList.add("light");
-
-    $("themeBtn").textContent =
-        "☀️";
-
+    $("themeBtn").textContent = "☀️";
 }
 
 
@@ -125,7 +90,6 @@ $("randomBtn").onclick = () => {
     $("randomPopup")
         .classList
         .add("show");
-
 };
 
 
@@ -136,7 +100,6 @@ $("closePopup").onclick = () => {
     $("randomPopup")
         .classList
         .remove("show");
-
 };
 
 
@@ -148,13 +111,10 @@ $("randomPopup").onclick = event => {
         event.target ===
         $("randomPopup")
     ) {
-
         $("randomPopup")
             .classList
             .remove("show");
-
     }
-
 };
 
 
@@ -167,7 +127,5 @@ document.onkeydown = event => {
         $("randomPopup")
             .classList
             .remove("show");
-
     }
-
 };

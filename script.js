@@ -48,19 +48,28 @@ const games = [
 
         link:
             "https://pranjalkarn9-art.github.io/mystery-detective/"
-    }
-
     },
 
     {
-    title: "Memory Match",
+        title: "Memory Match",
 
-    description:
-        "Test your memory, find matching pairs and build powerful combos.",
+        description:
+            "Test your memory, find matching pairs and build powerful combos.",
 
-    link:
-        "https://pranjalkarn9-art.github.io/Match-The-Card/"
-}
+        link:
+            "https://pranjalkarn9-art.github.io/Match-The-Card/"
+    },
+
+    {
+        title: "Asteroid Blaster",
+
+        description:
+            "Blast asteroids, survive dangerous waves and battle powerful space bosses.",
+
+        link:
+            "https://pranjalkarn9-art.github.io/Asteroid-Blaster/"
+    }
+
 ];
 
 

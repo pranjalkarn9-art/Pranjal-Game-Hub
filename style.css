@@ -749,6 +749,18 @@ nav a:hover {
 }
 
 
+.asteroid-game {
+
+    background:
+        linear-gradient(
+            135deg,
+            #07152e,
+            #102d4f
+        );
+
+}
+
+
 .game-info {
 
     padding: 20px;
